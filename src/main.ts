@@ -20,6 +20,8 @@ if (Config.USE_PROFILER) {
 
 log.info(`loading revision: ${ __REVISION__ }`);
 
+// Memory.sources = {};
+
 function mloop() {
   // Check memory for null or out of bounds custom objects
   if (!Memory.uuid || Memory.uuid > 100) {
